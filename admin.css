@@ -1,30 +1,127 @@
-/* Gaya untuk upload logo */
-#logo-upload {
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-header {
+    display: flex;
+    align-items: center;
+}
+
+#school-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+#logout-button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background-color: #FF4500;
+}
+
+/* Dashboard Layout */
+#dashboard {
+    display: flex;
+    padding: 20px;
+}
+
+#menu {
+    width: 200px;
+    background-color: #1E90FF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#settings {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.setting {
+    margin-bottom: 20px;
+}
+
+.setting label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.setting input {
     padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1em;
 }
 
-#uploaded-logo {
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Tombol Kembali ke Halaman Utama */
-#back-to-home {
+.setting button {
     padding: 12px 24px;
-    background-color: #FF6347; /* Tomat */
+    background-color: #1E90FF;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1.2em;
-    margin-top: 20px;
+    cursor: pointer;
 }
 
-#back-to-home:hover {
-    background-color: #FF4500; /* Darker Tomat */
+.setting button:hover {
+    background-color: #4682B4;
 }
