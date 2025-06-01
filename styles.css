@@ -34,6 +34,34 @@ header p {
     margin-bottom: 20px;
 }
 
+/* Countdown Timer */
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.time-box {
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.time-box p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
 /* Form untuk Cek Kelulusan */
 #check-graduation-form {
     background-color: white;
