@@ -1,4 +1,4 @@
-// Set countdown target date (Pastikan formatnya benar)
+// Set countdown target date
 const countdownDate = new Date("June 2, 2025 16:46:00 GMT+0700").getTime(); // WIB (GMT+7)
 
 // Update the countdown every 1 second
@@ -18,9 +18,10 @@ const countdownFunction = setInterval(function() {
     document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
     document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
 
-    // Jika countdown selesai, tampilkan pesan
+    // Jika countdown selesai, sembunyikan countdown dan tampilkan form cek kelulusan
     if (distance < 0) {
-        clearInterval(countdownFunction); // Hentikan interval
-        document.getElementById("countdown-timer").innerHTML = "Pengumuman Telah Dibuka!";
+        clearInterval(countdownFunction); // Hentikan interval countdown
+        document.getElementById("countdown-timer").style.display = "none"; // Sembunyikan countdown
+        document.getElementById("check-graduation-form").style.display = "block"; // Tampilkan form cek kelulusan
     }
 }, 1000); // Update setiap detik
