@@ -21,6 +21,15 @@
 
     <div id="admin-dashboard" style="display:none;">
         <h2>Dashboard Admin</h2>
+        
+        <!-- Form untuk Upload Logo -->
+        <div>
+            <h3>Upload Logo Sekolah</h3>
+            <input type="file" id="logo-upload" accept="image/*">
+            <br>
+            <img id="uploaded-logo" src="" alt="Logo Sekolah" style="max-width: 200px; margin-top: 20px;">
+        </div>
+
         <button onclick="showAddStudent()">Tambah Siswa</button>
         <button onclick="importExcel()">Import Data Siswa (Excel)</button>
         <button onclick="changePassword()">Ganti Password</button>
@@ -32,4 +41,13 @@
                 <input type="text" id="student-nis" placeholder="NIS" required>
                 <input type="text" id="student-nisn" placeholder="NISN" required>
                 <input type="text" id="student-name" placeholder="Nama" required>
-                <input type="text" id="student-class" placeh
+                <input type="text" id="student-class" placeholder="Kelas" required>
+                <input type="file" id="student-photo" required>
+                <button type="submit">Tambah Siswa</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
