@@ -21,6 +21,7 @@ header {
 header img {
     width: 80px;
     height: 80px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -38,6 +39,7 @@ header p {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;  /* Allows wrapping for smaller screens */
 }
 
 .time-box {
@@ -46,7 +48,8 @@ header p {
     background-color: #1E90FF;
     color: white;
     border-radius: 10px;
-    width: 100px;
+    width: 120px; /* Default width */
+    text-align: center;
 }
 
 .time-box span {
@@ -74,4 +77,49 @@ header p {
 
 #admin-login-button:hover {
     background-color: #FF4500;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Adjust header font size for smaller screens */
+    }
+
+    .time-box {
+        width: 80px;  /* Reduce box width on mobile */
+        padding: 15px;
+        margin: 10px 5px;
+    }
+
+    .time-box span {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    #admin-login-button {
+        font-size: 1em; /* Make button smaller on mobile */
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .time-box {
+        width: 100px;  /* Slightly reduce size on tablet screens */
+    }
+
+    #admin-login-button {
+        font-size: 1.1em;
+    }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 1024px) {
+    .time-box {
+        width: 150px; /* Increase box size on larger screens */
+    }
+
+    #admin-login-button {
+        font-size: 1.3em; /* Increase button size on large screens */
+    }
 }
