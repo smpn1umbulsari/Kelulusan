@@ -8,28 +8,34 @@
 </head>
 <body>
     <header>
-        <h1>SMP Negeri 1 Umbulsari</h1>
-        <h2>Pengumuman Kelulusan Tahun Pelajaran 2024/2025</h2>
-        <div id="countdown"></div>
-        <div>
-            <img id="school-logo" src="logo_default.png" alt="Logo Sekolah">
-        </div>
+        <img src="logo_default.png" alt="Logo Sekolah" id="school-logo">
+        <h1>Pengumuman Kelulusan</h1>
+        <p>Tahun Ajaran 2024/2025</p>
     </header>
-    
+
     <main>
-        <h3>Masukkan NIS dan NISN untuk Melihat Hasil Kelulusan</h3>
-        <form id="nis-form">
-            <input type="text" id="nis" placeholder="NIS" required>
-            <input type="text" id="nisn" placeholder="NISN" required>
-            <button type="submit">Cek Kelulusan</button>
-        </form>
-        
-        <!-- Tombol Login Admin -->
-        <div>
-            <button id="admin-login-button" onclick="window.location.href='admin.html'">Login Admin</button>
+        <div id="countdown-timer">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Hari</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Jam</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Menit</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Detik</p>
+            </div>
         </div>
-        
-        <div id="result"></div>
+
+        <p>Pengumuman akan dibuka pada 2 Juni 2025 pukul 16:46 WIB</p>
+
+        <button id="admin-login-button" onclick="window.location.href='admin.html'">Login Admin</button>
     </main>
 
     <script src="app.js"></script>
