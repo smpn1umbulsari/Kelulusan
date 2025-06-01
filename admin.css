@@ -1,3 +1,18 @@
+/* Gaya untuk upload logo */
+#logo-upload {
+    padding: 10px;
+    font-size: 1em;
+}
+
+#uploaded-logo {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Tombol Kembali ke Halaman Utama */
 #back-to-home {
     padding: 12px 24px;
