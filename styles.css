@@ -34,38 +34,55 @@ header p {
     margin-bottom: 20px;
 }
 
-/* Countdown Timer */
-#countdown-timer {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    flex-wrap: wrap;  /* Allows wrapping for smaller screens */
-}
-
-.time-box {
-    margin: 0 15px;
-    padding: 20px;
-    background-color: #1E90FF;
-    color: white;
+/* Form untuk Cek Kelulusan */
+#check-graduation-form {
+    background-color: white;
+    padding: 30px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
-    width: 120px; /* Default width */
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.time-box span {
-    font-size: 2.5em;
+#check-graduation-form form {
+    margin-bottom: 20px;
+}
+
+#check-graduation-form label {
     font-weight: bold;
     display: block;
+    margin-top: 10px;
+    text-align: left;
 }
 
-.time-box p {
-    font-size: 1em;
+#check-graduation-form input {
+    padding: 12px;
     margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-/* Button */
+#check-graduation-form button {
+    padding: 12px 24px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#check-graduation-form button:hover {
+    background-color: #4682B4;
+}
+
+/* Button Login Admin */
 #admin-login-button {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 12px 24px;
     background-color: #FF6347;
     color: white;
@@ -77,49 +94,4 @@ header p {
 
 #admin-login-button:hover {
     background-color: #FF4500;
-}
-
-/* Media Queries for responsiveness */
-
-/* Mobile devices */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2em; /* Adjust header font size for smaller screens */
-    }
-
-    .time-box {
-        width: 80px;  /* Reduce box width on mobile */
-        padding: 15px;
-        margin: 10px 5px;
-    }
-
-    .time-box span {
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #admin-login-button {
-        font-size: 1em; /* Make button smaller on mobile */
-    }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-    .time-box {
-        width: 100px;  /* Slightly reduce size on tablet screens */
-    }
-
-    #admin-login-button {
-        font-size: 1.1em;
-    }
-}
-
-/* Desktops and larger screens */
-@media (min-width: 1024px) {
-    .time-box {
-        width: 150px; /* Increase box size on larger screens */
-    }
-
-    #admin-login-button {
-        font-size: 1.3em; /* Increase button size on large screens */
-    }
 }
