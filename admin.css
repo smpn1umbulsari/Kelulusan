@@ -1,77 +1,15 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: #333;
-    text-align: center;
-}
-
-/* Admin Page Styling */
-h1 {
-    font-size: 2.5em;
-    color: #1E90FF; /* Blue */
+/* Tombol Kembali ke Halaman Utama */
+#back-to-home {
+    padding: 12px 24px;
+    background-color: #FF6347; /* Tomat */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
     margin-top: 20px;
 }
 
-form {
-    margin-top: 30px;
-    padding: 30px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    width: 300px;
-    display: inline-block;
-}
-
-form input {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #1E90FF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #4682B4;
-}
-
-/* Admin Dashboard Styling */
-#admin-dashboard {
-    margin-top: 40px;
-}
-
-#admin-dashboard button {
-    padding: 12px 24px;
-    background-color: #1E90FF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-#admin-dashboard button:hover {
-    background-color: #4682B4;
-}
-
-/* Add Student Form */
-#add-student-form {
-    background-color: #f9f9f9;
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 10px;
+#back-to-home:hover {
+    background-color: #FF4500; /* Darker Tomat */
 }
